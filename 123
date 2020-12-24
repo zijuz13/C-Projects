@@ -1,0 +1,44 @@
+# include<iostream>
+using namespace std;
+class Product{
+    private:
+    int id;
+    char name[15];
+    char producer[15];
+    char date[15];
+    double price;
+    int amount;
+    public:
+    Product(int id,char name[15],char producer[15],char date[15],double price,int amount){
+        strncpy()
+    }
+    void setId(int id){
+        this->id=id;
+    }
+    void setName(char name[15]){
+        this->name=name;
+    }
+    void setProducer(char producer[15]){
+      this->producer=producer;
+    }
+    void setDate(char date[15]){
+     this->date=date;
+    }
+    void setPrice(double price){
+        this->price=price;
+    }
+    void setAmount(int amount){
+        this->amount=amount;
+    }
+    int getId(){
+      return this->id; 
+    }
+    char[] getName(){
+       return this->name;
+    }
+};
+int main(){
+    Product product(1,"hujkc123","asd","asdas",3.2,16);
+    cout<<product.getId()<<endl;
+    return 0;
+}
